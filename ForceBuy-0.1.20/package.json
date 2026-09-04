@@ -1,0 +1,11 @@
+{
+  "name": "forcebuy",
+  "version": "0.1.20",
+  "private": true,
+  "type": "module",
+  "author": "ed3n <contact@ed3n.gallery>",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "dependencies": {
+    "@libsql/client": "^0.15.9"
+  }
+}
