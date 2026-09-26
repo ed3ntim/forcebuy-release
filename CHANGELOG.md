@@ -1,5 +1,46 @@
 # Changelog
 
+## 0.11.7 - stickers on historic and stored items
+
+### Holdings
+
+- **Historic items and items in storage units show their stickers and
+  charms.** Steam's inventory history describes every item as it was at that
+  moment, stickers and charms included; ForceBuy now reads that and fills them
+  in where a row has none - for an item that left, what it left with; for one
+  in a storage unit, what it went in with. Rows you edited by hand keep your
+  list. History read before this update gets its stickers on the next history
+  sync, which reads the whole history anyway; no extra requests.
+- **Float, pattern and stickers from CSFloat and Buff163.** Every item you
+  bought or sold there now takes its float, pattern and paint index from that
+  trade, and its stickers where Steam's history named none - including items
+  that left long ago or sit in a storage unit. A value the inventory or you
+  already set is kept. Buff163 names stickers only in Chinese; they are named
+  from the catalogue by their number instead. Trades read before this update
+  get their details on the next marketplace sync, which reads them once in
+  full; no extra kinds of requests.
+
+## 0.11.6 - the 0.11.5 download
+
+### Release
+
+- **The desktop download of 0.11.5 was not published; this version carries its
+  changes.** A test of the SQLite export took longer on the release machine
+  than the time it was given, which stopped the desktop build. It now has a
+  limit that fits the work it does. The web version was not affected.
+
+## 0.11.5 - item pictures load again
+
+### Holdings
+
+- **Pictures of items read from your inventory load again.** They showed as
+  empty boxes, while historic items had theirs. The cause: Steam now redirects
+  its picture host community.cloudflare.steamstatic.com to
+  community.steamstatic.com, which ForceBuy did not have on its list of
+  allowed picture hosts, so the redirect was refused. Pictures are now asked
+  for there directly, and a picture that failed under the old address is
+  tried again at once instead of after six hours.
+
 ## 0.11.4 - when things sold, a missing cost as zero
 
 ### Holdings
