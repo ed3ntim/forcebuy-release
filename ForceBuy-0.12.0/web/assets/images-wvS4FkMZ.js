@@ -1,0 +1,1 @@
+function i(t,e){return t?t.startsWith("/api/")?n(t,e):t.startsWith("http")?n(`/api/images/remote?url=${encodeURIComponent(t)}`,e):n(`/api/images/steam?icon=${encodeURIComponent(t)}`,e):null}function n(t,e){return`${t}${t.includes("?")?"&":"?"}size=${e}`}export{i};
