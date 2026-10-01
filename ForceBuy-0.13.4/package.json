@@ -1,0 +1,11 @@
+{
+  "name": "forcebuy",
+  "version": "0.13.4",
+  "private": true,
+  "type": "module",
+  "author": "ed3n <contact@ed3n.gallery>",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "dependencies": {
+    "@electric-sql/pglite": "0.5.8"
+  }
+}
