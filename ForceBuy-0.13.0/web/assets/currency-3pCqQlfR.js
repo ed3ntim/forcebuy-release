@@ -1,0 +1,1 @@
+import{c as r}from"./query-DT16r8zM.js";import{a as o}from"./index-CeqHMCqM.js";function s(){return r({queryKey:["bootstrap"],queryFn:()=>o.get("/api/bootstrap")}).data?.config.currency??"USD"}export{s as u};
