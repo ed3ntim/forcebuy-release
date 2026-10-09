@@ -1,0 +1,12 @@
+# The app ships with its dependencies; only local run artefacts are ignored.
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+pgdata/
+pgdata.*/
+*.log
+logs/
+cache/
+secrets.json
+config.json
+pointer.json
