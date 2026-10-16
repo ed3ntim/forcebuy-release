@@ -1,0 +1,36 @@
+{
+  "pages": [
+    {
+      "path": "/",
+      "file": "index.html"
+    },
+    {
+      "path": "/how-it-works",
+      "file": "how-it-works.html"
+    },
+    {
+      "path": "/faq",
+      "file": "faq.html"
+    },
+    {
+      "path": "/guides/cs2-purchase-prices",
+      "file": "guides/cs2-purchase-prices.html"
+    },
+    {
+      "path": "/guides/steam-market-fees",
+      "file": "guides/steam-market-fees.html"
+    },
+    {
+      "path": "/changelog",
+      "file": "changelog.html"
+    },
+    {
+      "path": "/privacy",
+      "file": "privacy.html"
+    },
+    {
+      "path": "/terms",
+      "file": "terms.html"
+    }
+  ]
+}
