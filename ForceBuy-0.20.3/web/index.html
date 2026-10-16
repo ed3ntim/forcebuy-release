@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+      What a crawler sees before any script: the landing page's title and
+      description. Each public page sets its own (and its canonical address)
+      through PageMeta once it renders.
+    -->
+    <title>ForceBuy - CS2 inventory tracker with real purchase prices and profit</title>
+    <meta
+      name="description"
+      content="Track what your CS2 skins are worth, what each one cost and your profit. Reads purchases and sales from the Steam Market, CSFloat and Buff163 automatically. Read-only. Closed test, with a demo open to everyone."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ForceBuy" />
+    <meta property="og:title" content="ForceBuy - CS2 inventory tracker with real purchase prices and profit" />
+    <meta
+      property="og:description"
+      content="What your CS2 skins are worth, what each one cost and what you made, with purchases read from the Steam Market, CSFloat and Buff163."
+    />
+    <meta property="og:image" content="https://forcebuy.net/landing/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="ForceBuy: every CS2 item you own, what it cost, and what it is worth." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Data, not a script: the CSP's script-src does not apply to it. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "ForceBuy",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web",
+            "url": "https://forcebuy.net/",
+            "image": "https://forcebuy.net/logo.png",
+            "description": "A CS2 inventory tracker that reads purchases and sales from the Steam Market, CSFloat and Buff163 and keeps value, cost basis and profit for every item."
+          },
+          { "@type": "WebSite", "name": "ForceBuy", "url": "https://forcebuy.net/" }
+        ]
+      }
+    </script>
+    <!--
+      The theme before the first paint: the stored choice, or the system one. The
+      React provider takes over from here; without this a dark-mode reader saw the
+      page flash white on every load.
+    -->
+    <script src="/theme-init.js"></script>
+    <!-- The ground in the theme's colour before any stylesheet has arrived. -->
+    <style>
+      html[data-theme="dark"] { background: #0a0c10; }
+      html[data-theme="light"] { background: #eef0f4; }
+    </style>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <script type="module" crossorigin src="/assets/main-Dq_9yU00.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-Br30PpYv.js">
+    <link rel="modulepreload" crossorigin href="/assets/index-CVrx4uvx.js">
+    <link rel="modulepreload" crossorigin href="/assets/LegalFooter-B4YzYzM1.js">
+    <link rel="modulepreload" crossorigin href="/assets/LogoMark-CMb8n6uJ.js">
+    <link rel="modulepreload" crossorigin href="/assets/SignInPage-C1Zmkgcv.js">
+    <link rel="modulepreload" crossorigin href="/assets/query-CdYOt0K7.js">
+    <link rel="modulepreload" crossorigin href="/assets/name-search-C5cXFEJw.js">
+    <link rel="modulepreload" crossorigin href="/assets/legal-CMFFGVUr.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-C8bUPUt2.css">
+  </head>
+  <body>
+    <!--
+      What stands until the app has loaded: the mark, faint, in the middle. React
+      replaces it on its first render.
+    -->
+    <div id="root">
+      <div style="min-height: 100vh; display: grid; place-items: center">
+        <img src="/favicon.svg" alt="ForceBuy" width="40" height="40" style="opacity: 0.55" />
+      </div>
+    </div>
+  </body>
+</html>

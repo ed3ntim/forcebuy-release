@@ -1,0 +1,1 @@
+import{f as a}from"./index-CVrx4uvx.js";import{h as r,r as n}from"./react-Br30PpYv.js";const t=document.getElementById("root"),o=a(window.location.pathname);t&&o?.hydrate&&o.load().then(e=>{r.hydrateRoot(t,n.createElement(e,{standalone:!0}))});
