@@ -1,0 +1,1 @@
+const a=[{wear:"Factory New",min:0,max:.07},{wear:"Minimal Wear",min:.07,max:.15},{wear:"Field-Tested",min:.15,max:.38},{wear:"Well-Worn",min:.38,max:.45},{wear:"Battle-Scarred",min:.45,max:1}];export{a as W};
